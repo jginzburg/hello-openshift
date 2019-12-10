@@ -31,11 +31,11 @@ items:
         from:
           kind: ImageStreamTag
           namespace: openshift
-          name: 'redhat-openjdk18-openshift:1.5'
+          name: 'redhat-openjdk18-openshift:latest'
     source:
       type: Git
       git:
-        uri: 'https://github.com/leandroberetta/hello-openshift.git'
+        uri: 'https://github.com/jginzburg/hello-openshift.git'
 - apiVersion: build.openshift.io/v1
   kind: BuildConfig
   metadata:
@@ -46,7 +46,7 @@ items:
     source:
       git:
         ref: master
-        uri: https://github.com/leandroberetta/hello-openshift.git
+        uri: https://github.com/jginzburg/hello-openshift.git
       type: Git
     strategy:
       jenkinsPipelineStrategy:
