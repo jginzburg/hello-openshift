@@ -31,7 +31,7 @@ items:
         from:
           kind: ImageStreamTag
           namespace: openshift
-          name: 'redhat-openjdk18-openshift:1.6'
+          name: 'redhat-openjdk18-openshift:1.4'
     source:
       type: Git
       git:
