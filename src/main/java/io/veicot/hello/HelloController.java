@@ -21,10 +21,7 @@ public class HelloController {
         return String.format(helloMessage, name);
     }
     
-    @RequestMapping("/hola/{name}")
-    public String holaWithName(@PathVariable() String name) {
-        return String.format(helloMessage, name);
-    }
+
        
     
 }
