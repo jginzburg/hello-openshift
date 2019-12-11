@@ -18,12 +18,12 @@ public class HelloController {
 
     @RequestMapping("/hello/{name}")
     public String helloWithName(@PathVariable() String name) {
-        return String.format(helloMessage, name);
+        return String.format(helloMessage+2, name);
     }
     
     @RequestMapping("/goodbye/{name}")
     public String goodbyeWithName(@PathVariable() String name) {
-        return String.format(helloMessage, name);
+        return String.format("Goodbye", name);
     }
        
     
