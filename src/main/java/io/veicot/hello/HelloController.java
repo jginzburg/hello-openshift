@@ -23,7 +23,7 @@ public class HelloController {
     
     @RequestMapping("/demo/{name}")
     public String goodbyeWithName(@PathVariable() String name) {
-        return String.format("Demo", name);
+        return "Demo " + name;
     }
        
     
