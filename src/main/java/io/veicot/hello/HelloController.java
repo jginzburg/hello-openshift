@@ -21,7 +21,10 @@ public class HelloController {
         return String.format(helloMessage, name);
     }
     
-
+    @RequestMapping("/goodbye/{name}")
+    public String goodbyeWithName(@PathVariable() String name) {
+        return String.format(helloMessage, name);
+    }
        
     
 }
